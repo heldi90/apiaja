@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "d61ad81d-d676-4c51-8f2f-1c72d5dca389",
+		"name": "API Player",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apiaja.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"apiaja",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mirai\",\r\n    \"password\": \"lkakjahsdkhk\",\r\n    \"score\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apiaja.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"apiaja",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apiaja.herokuapp.com/api/posts/619b5b8e25815a155b50b316",
+					"protocol": "https",
+					"host": [
+						"apiaja",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"619b5b8e25815a155b50b316"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"HeldiArisandi\",\r\n        \"password\": \"asasdasdasdad\",\r\n        \"score\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apiaja.herokuapp.com/api/posts/619b5b8e25815a155b50b316",
+					"protocol": "https",
+					"host": [
+						"apiaja",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"619b5b8e25815a155b50b316"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apiaja.herokuapp.com/api/posts/619dc2a8b9fea4572a493ce3",
+					"protocol": "https",
+					"host": [
+						"apiaja",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"619dc2a8b9fea4572a493ce3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
