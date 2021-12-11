@@ -4,7 +4,8 @@ module.exports = (app) => {
   const { runValidation, validationDaftar } = require('../../validation');
 
   router.get('/', posts.findAll);
-  router.post('/', validationDaftar, runValidation, posts.create);
+  router.post('/', validationDaftar, runValidation, posts.daftarUser);
+  router.post('/login', posts.loginUser);
   router.get('/:id', posts.findOne);
   router.put('/:id', validationDaftar, runValidation, posts.update);
   router.delete('/:id', posts.delete);
